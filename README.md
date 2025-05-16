@@ -19,32 +19,32 @@ This project is a simple React application developed as part of a technical test
 
 I began by replicating the structure and behavior of the original page to understand its design and logic. Once that was in place, I identified areas with potential for enhancement. Overall, the existing UI was well-designed, and the improvements I introduced are as follows:
 
-###a. Modal View:
+- Modal View:
   Each skip includes multiple data points. Displaying all of them upfront would clutter the UI. I added a "View Details" feature, which reveals additional information (e.g., price, transport cost, postcode, heavy waste support) when clicked.
 
-###b. Theme Toggle: 
+- Theme Toggle: 
   Users can now switch between light and dark themes using a button located at the top right of the page, catering to individual visual preferences.
 
-###c. Sorting:
+- Sorting: 
   Users can sort skips by size, price, transport cost, and hire period in either ascending or descending order for easier navigation.
 
-###d. Skip Unselection:  
+- Skip Unselection:  
   Selected skips can now be unselected without needing to choose a different one. If a skip is currently selected, the button label changes to "Unselect," allowing the user to deselect it. Alternatively, the skip can be removed via the delete icon at the bottom of the page.
 
-###e. Responsive Design: 
+- Responsive Design: 
   The layout adapts seamlessly to different screen sizes, ensuring a smooth experience across devices, including laptops and mobile phones.
 
 ## 5. Scalability and Modularity
 
 To ensure the application remains maintainable and scalable as it evolves, I followed several architectural principles:
 
-###a. Redux for State Management:  
+- Redux for State Management:  
   All application state is managed centrally using Redux. This makes state transitions predictable, easier to debug, and more maintainable as the app grows in complexity.
 
-###b. Styled Components for Modular Styling:  
+- Styled Components for Modular Styling:  
   Styling is handled using styled-components, which encapsulates styles within components. This prevents global CSS conflicts and supports theme switching with minimal overhead.
 
-###c. Separation of Concerns:  
+- Separation of Concerns: 
   - Components are broken down into modular, reusable units such as Modals, Styles, Utils, etc.  
   - Redux logic (actions, reducers, selectors) is separated from UI components.  
   - API interactions and utility functions are organized into dedicated service/helper files.  
